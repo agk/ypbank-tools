@@ -2,5 +2,19 @@
 name = "ypbank-tools"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.100"
+description = "Библиотека для работы с финансовыми операциями и два консольных приложения, которые будут использовать эту библиотеку"
+
+[lib]
+name = "ypbank_tools"
+path = "src/lib.rs"
+
+[[bin]]
+name = "converter"
+path = "src/main.rs"
+
+[[bin]]
+name = "comparer"
+path = "src/bin/comparer.rs"
 
 [dependencies]
